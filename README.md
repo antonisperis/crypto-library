@@ -5,7 +5,7 @@ A simple implementation of a cryptographic library written in C language.
 ## Features
 
 - [One time pad.](#one-time-pad)
-- [Ceasar's cipher.](#cesar's-cipher)
+- [Ceasar cipher.](#cesar-cipher)
 - [Playfair cipher.](#)
 - [Affine cipher.](#)
 - [Feistel cipher.](#)
@@ -35,7 +35,7 @@ The reverse process is followed in order to extract the decyphered text.
 uint8_t *otp_decrypt(uint8_t *ciphertext, uint8_t *key, int size);
 ```
 
-### Ceasar's cipher
+### Ceasar Cipher
 For the encryption part a shifted array is used as a key, which contains all the digits and all the english alphabet characters, shifted based on the user's input (shift variable). Each one character of the plaintext corresponds to one array character.
 
 ```c
