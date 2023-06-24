@@ -5,7 +5,7 @@ A simple implementation of a cryptographic library written in C language.
 ## Features
 
 - [One time pad.](#one-time-pad)
-- [Ceasar cipher.](#cesar-cipher)
+- [Ceasar cipher.](#ceasar-cipher)
 - [Playfair cipher.](#)
 - [Affine cipher.](#)
 - [Feistel cipher.](#)
