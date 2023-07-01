@@ -60,7 +60,7 @@ unsigned char *playfair_encrypt(unsigned char *plaintext, unsigned char **key);
 The reverse process is followed in order to extract the decyphered text.
 ```c
 unsigned char *playfair_decrypt(unsigned char *ciphertext, unsigned char **key);
-
+```
 
 ### Affine Cipher
 The affine cipher is a type of monoalphabetic substitution cipher where each letter is mapped to its numeric equivalent, encrypted using a simple mathematical function, and converted back to a letter. Each letter is encrypted with the function f(x) = (ax + b) mod m, where “a” is a constant, “b” is the magnitude of the shift and “x” is the letter to encrypt. The formula used, means that each letter encrypts to a single letter, thus, the cipher is essentially a standard substitution cipher with a rule governing which letter goes to which.
