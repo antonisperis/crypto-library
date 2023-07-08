@@ -75,3 +75,19 @@ possible. The letter x denotes the encrypted letter.
 ```c
 uint8_t *affine_decrypt(uint8_t *ciphertext, int size);
 ```
+
+### Feistel Cipher
+In cryptography a Feistel cipher is a symmetric structure used in the construction of block ciphers. In a Feistel cipher, encryption and decryption are very similar operations, and both consist of iteratively running a function called a "round function" a fixed number of times. A Feistel network uses a round function, a function which takes two inputs, a data block and a subkey, and returns one output the same size as the data block. In each round, the round function is run on half of the data to be encrypted and its output is XORed with the other half of the data. This is repeated a fixed number of times, and the final output is the encrypted data.
+
+```c
+uint8_t *feistel_encryption(uint8_t *plaintext, uint8_t **key, int size)
+```
+
+And for the decryption:
+
+```c
+uint8_t *feistel_decryption(uint8_t *ciphertext, uint8_t **key, int size);
+```
+
+
+
